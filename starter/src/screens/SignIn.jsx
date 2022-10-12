@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux'
 
-import TextInputField from '../components/TextInputField';
+import TextInputField from '../base-ui/TextInputField';
 import { profileActions, selectProfile } from '../store/profileSlice'
 
 

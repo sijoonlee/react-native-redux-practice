@@ -6,19 +6,22 @@ import rootStore from './src/store/rootStore'
 import SignIn from './src/screens/SignIn';
 import { loadProfile } from './src/store/profileSlice';
 
+import Home from './src/screens/Home'
+
 
 rootStore.dispatch(loadProfile())
 
 export default function App() {
 
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-      <Provider store={rootStore}>
-        <SignIn/>
-      </Provider>
-    </View>
+    <Home />
+    // <View style={styles.container}>
+    //   <Text>Open up App.js to start working on your app!</Text>
+    //   <StatusBar style="auto" />
+    //   <Provider store={rootStore}>
+    //     <SignIn/>
+    //   </Provider>
+    // </View>
   );
 }
 
