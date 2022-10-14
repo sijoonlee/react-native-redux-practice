@@ -1,0 +1,18 @@
+import React from 'react';
+
+type Props = {
+    className?: string
+}
+
+function Header({ className, ...others }: Props) {
+    return (
+        <div
+            className={className}
+            {...others}
+        >
+            Header
+        </div>
+    )
+}
+
+export default Header;
